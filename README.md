@@ -131,7 +131,7 @@ Finally, set up the configuration for the reward structure:
 Then run the python code
 
     > python SpiderBot_Train_Model.py
-<hr>
+<!-- <hr> -->
 
 ## Team
 <table>
