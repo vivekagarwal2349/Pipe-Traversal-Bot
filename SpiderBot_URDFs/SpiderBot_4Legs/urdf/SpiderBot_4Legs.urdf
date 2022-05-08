@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot
+  name="./SpiderBot_URDFs/SpiderBot_4Legs">
+  <link
+    name="body">
+    <inertial>
+      <origin
+        xyz="-1.6455E-06 -2.7132E-06 0.13522"
+        rpy="0 0 0" />
+        <!-- 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 -->
+      <mass
+        value="1.9509" />
+      <inertia
+        ixx="0.0068935"
+        ixy="-1.5477E-07"
+        ixz="-1.6748E-08"
+        iyy="0.0068934"
+        iyz="-2.768E-08"
+        izz="0.012599" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="./SpiderBot_URDFs/SpiderBot_4Legs/meshes/body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="./SpiderBot_URDFs/SpiderBot_4Legs/meshes/body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_L1_J1">
+    <inertial>
+      <origin
+        xyz="0.0208533170560279 5.55111512312578E-17 -0.0120000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="0.00957341037321664" />
+      <inertia
+        ixx="6.35237498388445E-07"
+        ixy="1.27054942088145E-21"
+        ixz="1.62186169348837E-20"
+        iyy="2.95388816018321E-06"
+        iyz="-8.55851251114886E-22"
+        izz="3.07273769122766E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L1_J1"
+    type="revolute">
+    <origin
+      xyz="0.108832033144844 -0.108832033144843 0.118000000000001"
+      rpy="3.14159265358978 0 -0.785398163397437" />
+    <parent
+      link="body" />
+    <child
+      link="link_L1_J1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L1_J2">
+    <inertial>
+      <origin
+        xyz="1.2490009027033E-16 -9.71445146547012E-17 0.0509087121146357"
+        rpy="0 0 0" />
+      <mass
+        value="0.0214270498659543" />
+      <inertia
+        ixx="2.34021439622059E-05"
+        ixy="3.3881317890172E-21"
+        ixz="-6.68361934942846E-20"
+        iyy="2.39989247736348E-05"
+        iyz="5.1351372427292E-20"
+        izz="1.16162974067388E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L1_J2"
+    type="revolute">
+    <origin
+      xyz="0.0329903810567685 0 -0.0119999999999972"
+      rpy="-2.6179938779915 0 -1.5707963267949" />
+    <parent
+      link="link_L1_J1" />
+    <child
+      link="link_L1_J2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L1_J3">
+    <inertial>
+      <origin
+        xyz="-0.0509087121146357 5.55111512312578E-17 -1.80411241501588E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0238433927437446" />
+      <inertia
+        ixx="1.0284985609508E-06"
+        ixy="3.67400540871553E-20"
+        ixz="-4.2960452293554E-20"
+        iyy="3.82502554199004E-05"
+        iyz="3.3881317890172E-21"
+        izz="3.83846267529608E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L1_J3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.101817424229271"
+      rpy="1.5707963267949 -0.523598775598305 1.57079632679489" />
+    <parent
+      link="link_L1_J2" />
+    <child
+      link="link_L1_J3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L1_J4">
+    <inertial>
+      <origin
+        xyz="-2.43606107508398E-10 -0.00336940912784062 -0.0483315670397481"
+        rpy="0 0 0" />
+      <mass
+        value="0.0205677845340441" />
+      <inertia
+        ixx="2.06704743841636E-05"
+        ixy="2.05897836080089E-14"
+        ixz="1.55720657781972E-13"
+        iyy="2.05646985832854E-05"
+        iyz="-2.80021798240062E-06"
+        izz="1.64193171564564E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L1_J4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L1_J4"
+    type="revolute">
+    <origin
+      xyz="-0.101817424229271 0 0"
+      rpy="0 1.57079630572147 0" />
+    <parent
+      link="link_L1_J3" />
+    <child
+      link="link_L1_J4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L2_J1">
+    <inertial>
+      <origin
+        xyz="0.0208533170560279 -1.38777878078145E-17 -0.0120000000000004"
+        rpy="0 0 0" />
+      <mass
+        value="0.00957341037321663" />
+      <inertia
+        ixx="6.35237498388445E-07"
+        ixy="3.70576914423756E-22"
+        ixz="-6.69667750469574E-22"
+        iyy="2.95388816018321E-06"
+        iyz="-4.36347195670013E-23"
+        izz="3.07273769122765E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L2_J1"
+    type="revolute">
+    <origin
+      xyz="-0.108832033144843 -0.108832033144843 0.118000000000001"
+      rpy="3.14159265358979 0 -2.35619449019234" />
+    <parent
+      link="body" />
+    <child
+      link="link_L2_J1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L2_J2">
+    <inertial>
+      <origin
+        xyz="1.94289029309402E-16 2.91433543964104E-16 0.0509087121146358"
+        rpy="0 0 0" />
+      <mass
+        value="0.0214270498659543" />
+      <inertia
+        ixx="2.34021439622059E-05"
+        ixy="2.5410988417629E-21"
+        ixz="-8.97325528497524E-20"
+        iyy="2.39989247736348E-05"
+        iyz="-1.15646467079814E-19"
+        izz="1.16162974067388E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L2_J2"
+    type="revolute">
+    <origin
+      xyz="0.0329903810567658 0 -0.0120000000000016"
+      rpy="-2.61799387799149 0 -1.5707963267949" />
+    <parent
+      link="link_L2_J1" />
+    <child
+      link="link_L2_J2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L2_J3">
+    <inertial>
+      <origin
+        xyz="-0.0509087121146357 -5.55111512312578E-17 4.16333634234434E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0238433927437446" />
+      <inertia
+        ixx="1.02849856095081E-06"
+        ixy="-7.94093388050907E-22"
+        ixz="5.82335151237331E-20"
+        iyy="3.82502554199004E-05"
+        iyz="-3.3881317890172E-21"
+        izz="3.83846267529608E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L2_J3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.101817424229271"
+      rpy="1.5707963267949 -0.523598775598299 1.57079632679489" />
+    <parent
+      link="link_L2_J2" />
+    <child
+      link="link_L2_J3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L2_J4">
+    <inertial>
+      <origin
+        xyz="-2.4360616301955E-10 -0.00336940912784073 -0.0483315670397482"
+        rpy="0 0 0" />
+      <mass
+        value="0.020567784534044" />
+      <inertia
+        ixx="2.06704743841635E-05"
+        ixy="2.05897802198771E-14"
+        ixz="1.55720654711478E-13"
+        iyy="2.05646985832853E-05"
+        iyz="-2.80021798240069E-06"
+        izz="1.64193171564566E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L2_J4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L2_J4"
+    type="revolute">
+    <origin
+      xyz="-0.101817424229271 0 0"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="link_L2_J3" />
+    <child
+      link="link_L2_J4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L3_J1">
+    <inertial>
+      <origin
+        xyz="0.0208533170560279 -2.77555756156289E-17 -0.0120000000000006"
+        rpy="0 0 0" />
+      <mass
+        value="0.00957341037321663" />
+      <inertia
+        ixx="6.35237498388445E-07"
+        ixy="1.27054942088145E-21"
+        ixz="-7.47259228201136E-22"
+        iyy="2.95388816018321E-06"
+        iyz="8.73052423127702E-23"
+        izz="3.07273769122766E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L3_J1"
+    type="revolute">
+    <origin
+      xyz="-0.108832033144842 0.108832033144844 0.118"
+      rpy="3.14159265358979 0 2.35619449019236" />
+    <parent
+      link="body" />
+    <child
+      link="link_L3_J1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L3_J2">
+    <inertial>
+      <origin
+        xyz="4.16333634234434E-17 -4.16333634234434E-17 0.0509087121146357"
+        rpy="0 0 0" />
+      <mass
+        value="0.0214270498659543" />
+      <inertia
+        ixx="2.34021439622059E-05"
+        ixy="8.470329472543E-22"
+        ixz="-6.06157952878859E-21"
+        iyy="2.39989247736348E-05"
+        iyz="2.5675686213646E-21"
+        izz="1.16162974067387E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L3_J2"
+    type="revolute">
+    <origin
+      xyz="0.0329903810567659 0 -0.0120000000000015"
+      rpy="-2.61799387799148 0 -1.5707963267949" />
+    <parent
+      link="link_L3_J1" />
+    <child
+      link="link_L3_J2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L3_J3">
+    <inertial>
+      <origin
+        xyz="-0.0509087121146358 -5.55111512312578E-17 6.93889390390723E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0238433927437446" />
+      <inertia
+        ixx="1.0284985609508E-06"
+        ixy="-7.90122921110652E-21"
+        ixz="1.40289831888993E-20"
+        iyy="3.82502554199004E-05"
+        iyz="-3.3881317890172E-21"
+        izz="3.83846267529608E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L3_J3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.101817424229271"
+      rpy="1.5707963267949 -0.523598775598301 1.57079632679489" />
+    <parent
+      link="link_L3_J2" />
+    <child
+      link="link_L3_J3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L3_J4">
+    <inertial>
+      <origin
+        xyz="-2.43605996486096E-10 -0.00336940912784089 -0.0483315670397481"
+        rpy="0 0 0" />
+      <mass
+        value="0.0205677845340441" />
+      <inertia
+        ixx="2.06704743841636E-05"
+        ixy="2.05897912313054E-14"
+        ixz="1.55720717815432E-13"
+        iyy="2.05646985832853E-05"
+        iyz="-2.80021798240075E-06"
+        izz="1.64193171564568E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L3_J4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L3_J4"
+    type="revolute">
+    <origin
+      xyz="-0.101817424229271 0 0"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="link_L3_J3" />
+    <child
+      link="link_L3_J4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L4_J1">
+    <inertial>
+      <origin
+        xyz="0.0208533170560278 -9.71445146547012E-17 -0.0120000000000002"
+        rpy="0 0 0" />
+      <mass
+        value="0.00957341037321664" />
+      <inertia
+        ixx="6.35237498388446E-07"
+        ixy="-2.38228016415272E-22"
+        ixz="1.61571029135456E-20"
+        iyy="2.95388816018321E-06"
+        iyz="9.35076574667277E-22"
+        izz="3.07273769122766E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L4_J1"
+    type="revolute">
+    <origin
+      xyz="0.108832033144843 0.108832033144844 0.118000000000001"
+      rpy="-3.14159265358979 0 0.785398163397464" />
+    <parent
+      link="body" />
+    <child
+      link="link_L4_J1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L4_J2">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -6.28663787693995E-15 0.0509087121146328"
+        rpy="0 0 0" />
+      <mass
+        value="0.0214270498659542" />
+      <inertia
+        ixx="2.34021439622059E-05"
+        ixy="0"
+        ixz="-1.87141341783997E-20"
+        iyy="2.39989247736348E-05"
+        iyz="3.56547931234857E-20"
+        izz="1.16162974067387E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L4_J2"
+    type="revolute">
+    <origin
+      xyz="0.0329903810567665 0 -0.0120000000000004"
+      rpy="-2.61799387799149 0 -1.5707963267949" />
+    <parent
+      link="link_L4_J1" />
+    <child
+      link="link_L4_J2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L4_J3">
+    <inertial>
+      <origin
+        xyz="-0.0509087121146358 0 1.66533453693773E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0238433927437446" />
+      <inertia
+        ixx="1.0284985609508E-06"
+        ixy="-4.75397241646476E-20"
+        ixz="4.11075677214353E-20"
+        iyy="3.82502554199004E-05"
+        iyz="-1.6940658945086E-21"
+        izz="3.83846267529607E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L4_J3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.101817424229268"
+      rpy="1.5707963267949 -0.523598775598301 1.5707963267949" />
+    <parent
+      link="link_L4_J2" />
+    <child
+      link="link_L4_J3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_L4_J4">
+    <inertial>
+      <origin
+        xyz="-2.4360616301955E-10 -0.00336940912784056 -0.0483315670397482"
+        rpy="0 0 0" />
+      <mass
+        value="0.020567784534044" />
+      <inertia
+        ixx="2.06704743841635E-05"
+        ixy="2.05897861491077E-14"
+        ixz="1.55720700557136E-13"
+        iyy="2.05646985832853E-05"
+        iyz="-2.80021798240061E-06"
+        izz="1.64193171564563E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename=""./SpiderBot_URDFs/SpiderBot_4Legs/meshes/link_L4_J4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L4_J4"
+    type="revolute">
+    <origin
+      xyz="-0.101817424229271 0 0"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="link_L4_J3" />
+    <child
+      link="link_L4_J4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
