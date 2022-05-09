@@ -1,5 +1,6 @@
 # **Pipe Traversal Bot**
-Title: **Implementation of Single and Multi-Agent Deep Reinforcement Learning Algorithms for a Walking Quadruped **
+
+<b>Title</b>: Implementation of Single and Multi-Agent Deep Reinforcement Learning Algorithms for a Walking Quadruped
 
 ## Introduction 
 
@@ -131,6 +132,25 @@ Finally, set up the configuration for the reward structure:
 Then run the python code
 
     > python SpiderBot_Train_Model.py
+## Team
+<table>
+    <td align="center">
+     <a href="https://github.com/vivekagarwal2349">
+    <img src="https://avatars.githubusercontent.com/u/75940729?v=4" width="100px;" alt=""/><br /><sub><b>Vivek Agarwal</b></sub></a><br />
+	</td>
+	<td align="center">
+     <a href="https://github.com/phoenixrider12">
+    <img src="https://avatars.githubusercontent.com/u/76533398?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Aryaman Gupta</b></sub></a><br />
+	</td>
+    <td align="center">
+     <a href="https://github.com/Srini-Rohan">
+    <img src="https://avatars.githubusercontent.com/u/76437900?v=4" width="100px;" alt=""/><br /><sub><b>Gujulla Leel Srini Rohan</b></sub></a><br />
+	</td>
+</table>
 
-
-
+## Mentor
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Raghav-Soni"><img src="https://avatars.githubusercontent.com/u/60649723?v=4" width="100px;" alt=""/><br /><sub><b>Raghav Soni</b></sub></a><br /></a></td>
+    </tr>
+</table>
