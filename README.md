@@ -1,4 +1,5 @@
 # **Pipe Traversal Bot**
+
 <b>Title</b>: Implementation of Single and Multi-Agent Deep Reinforcement Learning Algorithms for a Walking Quadruped
 
 ## Introduction 
