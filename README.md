@@ -132,6 +132,8 @@ Finally, set up the configuration for the reward structure:
 Then run the python code
 
     > python SpiderBot_Train_Model.py
+    
+![Bot image](src/bot.png)
 ## Team
 <table>
     <td align="center">
